@@ -4,10 +4,109 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     overflow: hidden;
     background-color: #bee7ed;
+}
+
+h1{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    font-size: 3em;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    background-color: #333;
+}
+.split{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.split.left{
+    background-color: rgb(151, 47, 47);
+    left: 0;
+}
+
+.split.right{
+    right: 0;
+    background-color: rgb(109, 54, 161);
+}
+
+
+.btn{
+    border: solid white 2px;
+    padding: 5px;
+    color: whitesmoke;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    transform: translateX(-35%);
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.split.left::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(78, 131, 96, 0.7);
+    width: 100%;
+    height: 100%;
+}
+.split.right::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(237, 237, 114, 0.751);
+    width: 100%;
+    height: 100%;
+}
+
+.split.left .btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.split.left,
+.split.right{
+    transition: all 1s ease-in-out;
+}
+.split.right .btn:hover{
+    background-color: #f71515;
+    color: black;
+}
+
+.hover-left .split.left{
+    width: 75%;
+}
+.hover-left .split.right{
+    width: 25%;
+}
+
+.hover-right .split.left{
+    width: 25%;
+}
+.hover-right .split.right{
+    width: 75%;
+}
+
+@media (max-width:800px) {
+    h1{
+        font-size: 40px;
+        top: 35%;
+    }
+    .btn{
+        width: 100px;
+    }
 }
