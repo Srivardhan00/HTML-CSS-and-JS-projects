@@ -11,3 +11,24 @@ body{
     overflow: hidden;
     background-color: #bee7ed;
 }
+.container{
+    width: 500px;
+}
+textarea{
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px 0px 15px 0px;
+    border: none;
+    height: 100px;
+    display: block;
+    font-size: 16px;
+}
+.choice{
+    background-color: burlywood;
+    margin: 5px 5px;
+    padding: 3px 7px;
+    border-radius: 45px;
+}
+.choice.selected{
+    background-color: brown;
+}
