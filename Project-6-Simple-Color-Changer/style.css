@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+button{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+}
+#grey{
+    background-color: gray;
+}
+#green{
+    background-color: green;
+}
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#cyan{
+    background-color: cyan;
+}
